@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Propostas | Agência O Sócio</title>
+  <style>
+    :root{--bg:#070707;--card:#111;--line:#242424;--txt:#f7f7f7;--muted:#a7a7a7;--yellow:#ffd600}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at top right,#1d1d1d 0,#070707 38%,#030303 100%);color:var(--txt);min-height:100vh}
+    main{width:min(1080px,92vw);margin:0 auto;padding:56px 0 72px}
+    .brand{display:inline-flex;gap:10px;align-items:center;border:1px solid var(--line);border-radius:999px;padding:10px 14px;color:var(--muted);font-size:13px;background:rgba(255,255,255,.04)}
+    .dot{width:9px;height:9px;background:var(--yellow);border-radius:999px;box-shadow:0 0 28px rgba(255,214,0,.7)}
+    h1{font-size:clamp(42px,9vw,92px);line-height:.92;letter-spacing:-.06em;margin:28px 0 18px;max-width:900px}
+    p{font-size:clamp(16px,2.4vw,20px);line-height:1.6;color:var(--muted);max-width:720px;margin:0 0 34px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:38px}
+    a.card{display:block;text-decoration:none;color:var(--txt);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:28px;padding:26px;min-height:188px;position:relative;overflow:hidden;transition:.2s ease}
+    a.card:hover{transform:translateY(-3px);border-color:rgba(255,214,0,.45)}
+    .tag{color:var(--yellow);text-transform:uppercase;letter-spacing:.14em;font-weight:800;font-size:12px;margin-bottom:36px}
+    h2{font-size:30px;line-height:1.04;letter-spacing:-.04em;margin:0 0 12px}
+    .card p{font-size:14px;line-height:1.5;margin:0;color:#bcbcbc}
+    .arrow{position:absolute;right:22px;top:22px;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--yellow)}
+    footer{margin-top:50px;padding-top:22px;border-top:1px solid var(--line);color:#777;font-size:13px}
+    @media(max-width:760px){main{padding:36px 0 56px}.grid{grid-template-columns:1fr}a.card{min-height:165px;border-radius:22px;padding:22px}h1{letter-spacing:-.045em}.tag{margin-bottom:26px}}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand"><span class="dot"></span> Agência O Sócio | Propostas online</div>
+    <h1>Central de propostas e relatórios.</h1>
+    <p>Projeto estático para publicar propostas em link pela Vercel. Esta página é apenas um índice interno e está marcada como noindex.</p>
+    <section class="grid" aria-label="Links das propostas">
+      <a class="card" href="/clientes/delilife/"><span class="arrow">→</span><div class="tag">Cliente</div><h2>DeliLife</h2><p>Proposta de CRM, IA SDR, API Oficial do WhatsApp e tráfego pago.</p></a>
+      <a class="card" href="/clientes/radiex-nordeste/"><span class="arrow">→</span><div class="tag">Cliente</div><h2>Radiex Nordeste</h2><p>Proposta de imagens estáticas e social media para conteúdo.</p></a>
+      <a class="card" href="/clientes/arielly/"><span class="arrow">→</span><div class="tag">Cliente</div><h2>Arielly</h2><p>Proposta personalizada de produto digital, funil, tráfego e automação.</p></a>
+      <a class="card" href="/relatorios/sky-julho/"><span class="arrow">→</span><div class="tag">Relatório</div><h2>Google Ads SKY</h2><p>Análise de termos, orçamento, projeção e próximos passos.</p></a>
+    </section>
+    <footer>© Agência O Sócio — Marketing, Vendas & Automação.</footer>
+  </main>
+</body>
+</html>
