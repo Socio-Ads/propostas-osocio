@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Proposta • Armazem.com | SKY Americana</title>
+<style>
+:root{
+  --sky-red:#e30613;
+  --navy:#071a2c;
+  --blue:#0c4e8a;
+  --ink:#111827;
+  --muted:#5f6b78;
+  --soft:#f4f7fa;
+  --soft2:#eef3f7;
+  --line:#dfe6ec;
+  --white:#ffffff;
+  --green:#0d8f66;
+  --radius:22px;
+  --shadow:0 14px 38px rgba(7,26,44,.08);
+  --sans:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--sans);
+  color:var(--ink);
+  background:#fff;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{width:min(1080px,calc(100% - 28px));margin:0 auto}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+.hero{padding:28px 0 64px}
+.topline{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:8px 0 26px;
+}
+.skyLogo{height:42px;width:auto;display:block}
+.partner{
+  text-align:right;
+  color:var(--muted);
+  line-height:1.2;
+}
+.partner b{
+  display:block;
+  color:var(--navy);
+  font-size:22px;
+  font-weight:1000;
+  letter-spacing:-.035em;
+}
+.partner span{
+  display:block;
+  margin-top:4px;
+  font-size:12px;
+  color:var(--sky-red);
+  font-weight:900;
+  letter-spacing:.03em;
+}
+.heroGrid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:32px;
+  align-items:center;
+}
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px;
+  border-radius:999px;
+  background:#fff0f1;
+  color:var(--sky-red);
+  font-weight:900;
+  font-size:12px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+h1{
+  font-size:clamp(42px,7vw,78px);
+  line-height:.95;
+  letter-spacing:-.055em;
+  margin:18px 0 18px;
+  color:var(--navy);
+  max-width:760px;
+}
+h2{
+  font-size:clamp(30px,4.7vw,52px);
+  line-height:1;
+  letter-spacing:-.04em;
+  margin:0 0 16px;
+  color:var(--navy);
+}
+h3{
+  font-size:23px;
+  line-height:1.08;
+  letter-spacing:-.025em;
+  margin:0 0 8px;
+  color:var(--navy);
+}
+p,li{font-size:16px;line-height:1.5;color:var(--muted)}
+.lead{font-size:clamp(18px,2.2vw,22px);line-height:1.4;max-width:760px}
+.red{color:var(--sky-red)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.pill{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:999px;
+  padding:9px 11px;
+  color:var(--navy);
+  font-size:13px;
+  font-weight:800;
+}
+.heroCard{
+  background:var(--navy);
+  color:#fff;
+  border-radius:28px;
+  padding:28px;
+  box-shadow:var(--shadow);
+  min-height:370px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.heroCard small{
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:11px;
+  font-weight:900;
+  color:#a8bfd0;
+}
+.heroCard .big{
+  font-size:clamp(38px,5vw,60px);
+  line-height:.95;
+  letter-spacing:-.05em;
+  font-weight:1000;
+  margin:12px 0;
+}
+.heroCard .big span{color:#ff3340}
+.heroCard p{color:#d5e2ec}
+.heroCard .miniFlow{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+}
+.heroCard .miniFlow div{
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:16px;
+  padding:12px 8px;
+  text-align:center;
+  font-size:12px;
+  color:#dce7ef;
+  background:rgba(255,255,255,.03);
+}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:22px}
+.c12{grid-column:span 12} .c8{grid-column:span 8} .c7{grid-column:span 7}
+.c6{grid-column:span 6} .c5{grid-column:span 5} .c4{grid-column:span 4} .c3{grid-column:span 3}
+.card{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:var(--radius);
+  padding:22px;
+  box-shadow:0 8px 26px rgba(7,26,44,.04);
+}
+.card.soft{background:var(--soft)}
+.card.redCard{background:var(--sky-red);border-color:var(--sky-red)}
+.card.redCard h3,.card.redCard p,.card.redCard .label,.card.redCard li{color:#fff}
+.label{
+  font-size:11px;
+  font-weight:950;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:#82909c;
+  margin-bottom:9px;
+}
+.bigBand{
+  margin-top:16px;
+  background:var(--navy);
+  border-radius:26px;
+  padding:26px;
+  color:#fff;
+}
+.bigBand .copy{
+  font-size:clamp(28px,4.4vw,48px);
+  line-height:1;
+  letter-spacing:-.04em;
+  font-weight:950;
+}
+.bigBand .copy span{color:#ff3340}
+.checks{display:grid;gap:9px;margin-top:12px}
+.check{display:flex;align-items:flex-start;gap:9px;color:var(--muted);font-size:15px;line-height:1.4}
+.check:before{
+  content:"✓";
+  width:21px;height:21px;flex:0 0 21px;
+  border-radius:50%;
+  background:#eaf7f2;color:var(--green);
+  display:grid;place-items:center;
+  font-weight:1000;
+}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin-top:20px}
+.flow .item{
+  background:var(--soft);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:15px;
+}
+.flow .num{
+  width:30px;height:30px;
+  border-radius:10px;
+  display:grid;place-items:center;
+  background:var(--sky-red);
+  color:#fff;
+  font-weight:950;
+  margin-bottom:10px;
+}
+.flow h3{font-size:18px}
+.flow p{font-size:14px;margin-bottom:0}
+.priceBox{
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:26px;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+.priceMain{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
+}
+.price{
+  font-size:clamp(46px,6.5vw,72px);
+  line-height:.9;
+  font-weight:1000;
+  letter-spacing:-.06em;
+  color:var(--navy);
+}
+.price span{color:var(--sky-red)}
+.price small{
+  display:block;
+  margin-top:10px;
+  font-size:14px;
+  line-height:1.4;
+  letter-spacing:0;
+  color:var(--muted);
+  font-weight:700;
+}
+.badge{
+  border-radius:999px;
+  padding:9px 12px;
+  background:#fff0f1;
+  color:var(--sky-red);
+  font-size:12px;
+  font-weight:900;
+}
+.breakdown{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:18px;
+}
+.line{
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px;
+  background:var(--soft);
+}
+.line b{display:block;font-size:23px;color:var(--navy);margin-top:3px}
+.line p{font-size:14px;margin-bottom:0}
+.bonus{
+  margin-top:16px;
+  background:var(--navy);
+  border-radius:22px;
+  padding:20px;
+}
+.bonus h3{color:#fff}
+.bonus .check{color:#dce7ef}
+.bonus .check:before{background:#fff0f1;color:var(--sky-red)}
+.optional{
+  margin-top:14px;
+  border:1px dashed #c5cfd7;
+  border-radius:18px;
+  padding:18px;
+}
+.optional strong{font-size:22px;color:var(--navy)}
+.optional .value{color:var(--sky-red);font-weight:1000}
+.note{font-size:12px;color:#7d8a96;margin-top:10px}
+.paybox{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:16px;
+}
+.pay{
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px;
+  background:#fff;
+}
+.pay b{display:block;color:var(--navy);font-size:18px;margin-bottom:4px}
+.footer{
+  padding:28px 0 34px;
+  text-align:center;
+  color:#7f8c98;
+  font-size:13px;
+}
+.footer a{color:var(--sky-red);text-decoration:none;font-weight:900}
+@media(max-width:860px){
+  section{padding:44px 0}
+  .hero{padding-top:16px}
+  .topline{padding-bottom:18px}
+  .skyLogo{height:36px}
+  .heroGrid{grid-template-columns:1fr;gap:20px}
+  .heroCard{min-height:auto}
+  .c8,.c7,.c6,.c5,.c4,.c3{grid-column:span 12}
+  .flow{grid-template-columns:1fr 1fr}
+  .breakdown,.paybox{grid-template-columns:1fr}
+  h1{font-size:47px}
+  h2{font-size:36px}
+}
+@media(max-width:520px){
+  .wrap{width:min(100% - 20px,1080px)}
+  section{padding:38px 0}
+  .partner b{font-size:17px}.partner span{font-size:10px}
+  .skyLogo{height:32px}
+  .heroCard{padding:22px;border-radius:22px}
+  .heroCard .miniFlow{grid-template-columns:1fr}
+  .card{padding:18px;border-radius:18px}
+  .flow{grid-template-columns:1fr}
+  .bigBand{padding:21px;border-radius:20px}
+  .priceBox{padding:20px;border-radius:22px}
+}
+@media print{
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  @page{margin:0}
+  body{background:#fff!important}
+  section{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="topline">
+      <img class="skyLogo" src="data:image/png;base64,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" alt="SKY">
+      <div class="partner"><b>Armazem.com</b><span>Revendedor SKY • Americana/SP</span></div>
+    </div>
+
+    <div class="heroGrid">
+      <div>
+        <span class="eyebrow">Proposta Comercial • Aquisição + Vendas</span>
+        <h1>Mais presença. Mais leads. <span class="red">Menor custo por venda.</span></h1>
+        <p class="lead">Vamos organizar a presença digital da Armazem.com e conectar Google, Meta, CRM, WhatsApp Oficial e IA em uma operação mais eficiente.</p>
+        <div class="pills">
+          <span class="pill">Google Ads</span>
+          <span class="pill">Meta Ads</span>
+          <span class="pill">Landing Page</span>
+          <span class="pill">CRM</span>
+          <span class="pill">WhatsApp Oficial</span>
+          <span class="pill">IA SDR</span>
+        </div>
+      </div>
+
+      <div class="heroCard">
+        <div>
+          <small>Objetivo principal</small>
+          <div class="big">Reduzir o custo do <span>lead</span> e da <span>aquisição.</span></div>
+          <p>Não queremos só gerar contato. Queremos melhorar a qualidade do funil inteiro.</p>
+        </div>
+        <div class="miniFlow">
+          <div>Anúncio</div>
+          <div>Atendimento</div>
+          <div>Venda</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>O que vamos colocar de pé.</h2>
+    <div class="grid">
+      <div class="c4 card"><div class="label">Google Ads</div><h3>Quem já está procurando</h3><p>Campanhas de pesquisa para captar pessoas com intenção real de contratação.</p></div>
+      <div class="c4 card"><div class="label">Meta Ads</div><h3>Facebook + Instagram</h3><p>Campanhas para gerar demanda, levar pessoas ao WhatsApp e ampliar presença regional.</p></div>
+      <div class="c4 card"><div class="label">Landing Page</div><h3>Página própria</h3><p>Uma página rápida e objetiva para trabalhar Google Ads e transformar clique em contato.</p></div>
+      <div class="c4 card"><div class="label">Google Meu Negócio</div><h3>Presença local</h3><p>Ficha profissional para fortalecer confiança e facilitar buscas em Americana.</p></div>
+      <div class="c4 card"><div class="label">Instagram + Facebook</div><h3>Marca organizada</h3><p>Estratégia inicial para criar os perfis e começar com uma comunicação profissional.</p></div>
+      <div class="c4 card"><div class="label">CRM</div><h3>Leads organizados</h3><p>Todos os contatos em etapas claras para acompanhar atendimento, proposta e venda.</p></div>
+      <div class="c4 card"><div class="label">WhatsApp Oficial</div><h3>Envio em massa</h3><p>Reativação de bases e campanhas usando API Oficial do WhatsApp.</p></div>
+      <div class="c4 card"><div class="label">IA SDR</div><h3>Qualificação inicial</h3><p>Agente para responder, coletar dados e deixar o lead mais preparado para o vendedor.</p></div>
+      <div class="c4 card redCard"><div class="label">Resultado</div><h3>Operação integrada</h3><p>Marketing e vendas trabalhando juntos para aproveitar melhor cada lead.</p></div>
+    </div>
+
+    <div class="bigBand">
+      <div class="copy">O anúncio gera o contato. <span>A estrutura evita desperdiçar o contato.</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Como o lead percorre a operação.</h2>
+    <div class="flow">
+      <div class="item"><div class="num">1</div><h3>Anúncio</h3><p>Google e Meta atraem.</p></div>
+      <div class="item"><div class="num">2</div><h3>Landing</h3><p>Apresenta a oferta.</p></div>
+      <div class="item"><div class="num">3</div><h3>WhatsApp</h3><p>Lead entra.</p></div>
+      <div class="item"><div class="num">4</div><h3>IA SDR</h3><p>Qualifica.</p></div>
+      <div class="item"><div class="num">5</div><h3>CRM</h3><p>Organiza.</p></div>
+      <div class="item"><div class="num">6</div><h3>Venda</h3><p>Comercial fecha.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Google + Meta: papéis diferentes.</h2>
+    <div class="grid">
+      <div class="c6 card soft">
+        <div class="label">Google Ads</div>
+        <h3>Capturar intenção</h3>
+        <div class="checks">
+          <div class="check">Pessoas procurando SKY e TV por assinatura</div>
+          <div class="check">Palavras-chave com maior intenção</div>
+          <div class="check">Anúncios por região</div>
+          <div class="check">Landing Page própria para conversão</div>
+        </div>
+      </div>
+      <div class="c6 card">
+        <div class="label">Meta Ads</div>
+        <h3>Criar demanda</h3>
+        <div class="checks">
+          <div class="check">Facebook e Instagram</div>
+          <div class="check">Criativos e ofertas locais</div>
+          <div class="check">Campanhas para WhatsApp</div>
+          <div class="check">Remarketing para quem já demonstrou interesse</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Presença local e primeiros conteúdos.</h2>
+    <div class="grid">
+      <div class="c4 card"><div class="label">Google Meu Negócio</div><h3>Busca local</h3><p>Criação e configuração da ficha da Armazem.com para Americana.</p></div>
+      <div class="c4 card"><div class="label">Instagram</div><h3>Perfil profissional</h3><p>Assessoria para nome, bio, posicionamento e estrutura inicial.</p></div>
+      <div class="c4 card"><div class="label">Facebook</div><h3>Página da empresa</h3><p>Estrutura institucional e base para as campanhas do Meta.</p></div>
+    </div>
+    <div class="card soft" style="margin-top:14px">
+      <div class="label">Calendário inicial</div>
+      <h3>7 primeiras postagens planejadas.</h3>
+      <p>Apresentação da empresa, ofertas, diferenciais, dúvidas frequentes, prova social, WhatsApp e conteúdo de confiança.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Investimento e condições.</h2>
+
+    <div class="priceBox">
+      <div class="priceMain">
+        <div>
+          <div class="label">Gestão de tráfego • Google + Meta</div>
+          <div class="price">R$ <span>997</span>/mês
+            <small>Gestão mensal com limite de até R$ 5.000 em investimento de mídia.</small>
+          </div>
+        </div>
+        <span class="badge">Pré-pago</span>
+      </div>
+
+      <div class="breakdown" style="grid-template-columns:1fr">
+        <div class="line">
+          <span>Investimento recomendado em mídia</span>
+          <b>R$ 33,33/dia</b>
+          <p>Valor inicial recomendado. Pode ser maior ou menor conforme a estratégia definida com o cliente.</p>
+        </div>
+      </div>
+
+      <div class="bonus">
+        <h3>Incluído no plano de R$ 997/mês</h3>
+        <div class="checks">
+          <div class="check">Gestão de Google Ads + Meta Ads</div>
+          <div class="check">Acesso ao CRM</div>
+          <div class="check">Criação/configuração do Google Meu Negócio</div>
+          <div class="check">Assessoria na criação do Instagram e página do Facebook</div>
+          <div class="check">Calendário das 7 primeiras postagens</div>
+        </div>
+      </div>
+
+
+      <div class="optional" style="border-style:solid">
+        <span class="label">Obrigatório para tráfego no Google</span>
+        <strong>Landing Page + domínio + hospedagem — <span class="value">R$ 337/ano</span></strong>
+        <p>Estrutura necessária para receber os cliques do Google com uma página própria e confiável.</p>
+        <div class="checks">
+          <div class="check">Planos e ofertas atualizados quando necessário</div>
+          <div class="check">Ajustes da página conforme o resultado das campanhas</div>
+          <div class="check">Domínio e hospedagem incluídos</div>
+        </div>
+      </div>
+
+      <div class="optional">
+        <span class="label">Opcional</span>
+        <strong>Módulo de envio em massa via WhatsApp Oficial — <span class="value">R$ 247/mês</span></strong>
+        <p>Para reativação de base, campanhas e follow-up usando API Oficial do WhatsApp.</p>
+      </div>
+
+      <div class="paybox">
+        <div class="pay">
+          <b>Pagamento da agência</b>
+          <p>Pré-pago via PIX.</p>
+        </div>
+        <div class="pay">
+          <b>Pagamento da mídia</b>
+          <p>Pode ser feito via PIX ou cartão de crédito direto nas plataformas.</p>
+        </div>
+      </div>
+
+      <p class="note">A verba de anúncios é separada da mensalidade da agência. O valor pode ser ajustado conforme objetivo, cobertura e estratégia.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="bigBand">
+      <div class="copy">Primeiro organizamos a base. Depois usamos dados para <span>baixar o custo e escalar.</span></div>
+      <p style="color:#dce7ef;margin-top:12px">Após a confirmação, fazemos a reunião de alinhamento, recebemos ofertas, cobertura e acessos e iniciamos a configuração da operação.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    O Sócio | Marketing, Vendas & Automação •
+    <a href="https://instagram.com/osocio">@osocio</a> •
+    <a href="https://lp.osocio.com.br">lp.osocio.com.br</a>
+  </div>
+</footer>
+
+</body>
+</html>
