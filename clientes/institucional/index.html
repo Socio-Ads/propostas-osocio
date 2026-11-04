@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="description" content="O Sócio: marketing, vendas e automação para atrair, atender e converter mais clientes.">
+<title>O Sócio | Marketing, Vendas & Automação</title>
+<style>
+:root{--black:#0a0a0a;--dark:#131313;--white:#fff;--paper:#f7f7f4;--yellow:#ffd600;--muted:#666;--line:#e5e5df;--font:Inter,Arial,Helvetica,system-ui,-apple-system,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--black);font-family:var(--font);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+.wrap{width:min(1080px,calc(100% - 48px));margin-inline:auto}
+section{position:relative;padding:90px 0}
+.kicker{font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+.label{font-size:11px;letter-spacing:.11em;font-weight:850;text-transform:uppercase}
+.h2{font-size:clamp(36px,5vw,64px);font-weight:900;line-height:1.01;letter-spacing:-.062em;margin:16px 0 22px;max-width:900px}
+.lead{font-size:clamp(17px,1.85vw,21px);line-height:1.52;letter-spacing:-.01em;max-width:760px;margin:0}
+.yellow{color:var(--yellow)}
+.ink{color:var(--black)}
+/* Header + hero */
+.hero{background:var(--black);color:var(--white);min-height:94svh;padding:30px 0 68px;display:flex;flex-direction:column}
+.top{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.wordmark{font-size:clamp(24px,3.3vw,37px);font-weight:950;letter-spacing:-.075em;line-height:1;white-space:nowrap}
+.wordmark span{color:var(--yellow)}
+.top-right{text-align:right;color:#bdbdbd;font-size:10px;line-height:1.5;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.hero-content{flex:1;display:flex;flex-direction:column;justify-content:center;padding:110px 0 86px}
+.hero .kicker{color:var(--yellow)}
+.hero h1{font-weight:950;font-size:clamp(53px,8.9vw,119px);line-height:.92;letter-spacing:-.087em;margin:23px 0 31px;max-width:990px}
+.hero .lead{color:#d0d0d0;max-width:690px}
+.hero-bottom{border-top:1px solid #383838;padding-top:18px;display:flex;justify-content:space-between;align-items:center;color:#c7c7c7;font-size:12px;font-weight:750;gap:10px}
+.yellow-dot{width:11px;height:11px;background:var(--yellow);display:inline-block;border-radius:50%;vertical-align:middle;margin-right:8px}
+/* Pain */
+.pain{background:var(--paper)}
+.pain-header{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(240px,.6fr);gap:60px;align-items:end}
+.pain-header .lead{color:#4c4c4c}
+.pain-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:38px}
+.pain-card{background:#fff;border:1px solid var(--line);padding:30px 30px 35px;min-height:220px;display:flex;flex-direction:column;justify-content:space-between}
+.pain-card .n{color:#b7b7b0;font-size:12px;font-weight:900;letter-spacing:.06em}
+.pain-card h3{font-size:clamp(22px,2.6vw,30px);font-weight:875;line-height:1.08;letter-spacing:-.055em;margin:26px 0 9px}
+.pain-card p{font-size:15px;line-height:1.45;color:#666;margin:0}
+/* Bridge */
+.bridge{background:var(--yellow);padding:82px 0}
+.bridge h2{font-size:clamp(37px,5.9vw,75px);font-weight:950;line-height:.99;letter-spacing:-.074em;margin:0;max-width:950px}
+.bridge p{font-size:18px;line-height:1.45;margin:24px 0 0;max-width:680px;font-weight:550}
+/* Method */
+.method{background:var(--white)}
+.method-intro{border-bottom:1px solid var(--line);padding-bottom:30px}
+.method-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:40px}
+.method-card{padding:20px 26px 30px 0;border-right:1px solid var(--line)}
+.method-card:not(:first-child){padding-left:26px}
+.method-card:last-child{border-right:0}
+.method-card .step{width:42px;height:42px;border-radius:50%;background:var(--black);color:var(--yellow);display:flex;align-items:center;justify-content:center;font-weight:950;font-size:16px;margin-bottom:40px}
+.method-card h3{font-size:32px;font-weight:900;letter-spacing:-.06em;margin:0 0 12px}
+.method-card p{color:#626262;line-height:1.48;font-size:16px;margin:0}
+.method-card .meta{display:block;border-top:1px solid var(--line);margin-top:30px;padding-top:14px;color:#444;font-weight:800;font-size:12px;line-height:1.5;letter-spacing:.015em}
+/* Services */
+.services{background:#111;color:var(--white)}
+.services .h2{max-width:850px}
+.services .lead{color:#c2c2c2}
+.service-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px}
+.service{border:1px solid #343434;padding:25px;min-height:166px;display:flex;flex-direction:column;justify-content:space-between}
+.service-name{font-size:clamp(22px,2.5vw,30px);font-weight:900;letter-spacing:-.055em;line-height:1.03}
+.service-desc{font-size:14px;line-height:1.45;color:#bababa;max-width:390px;margin:14px 0 0}
+.service .tag{font-weight:950;color:var(--yellow);font-size:11px;letter-spacing:.12em;margin-bottom:18px}
+/* Before vs after */
+.transform{background:var(--paper)}
+.compare{display:grid;grid-template-columns:1fr 1fr;margin-top:40px;border:1px solid #deded8}
+.compare-col{min-width:0}
+.compare-col+.compare-col{border-left:1px solid #deded8;background:#fff}
+.compare-title{background:#e9e9e4;padding:20px 25px;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.compare-col+.compare-col .compare-title{background:var(--yellow)}
+.compare-item{min-height:96px;display:flex;align-items:center;border-top:1px solid #e6e6df;padding:21px 25px;font-size:clamp(17px,2vw,22px);font-weight:780;letter-spacing:-.03em;line-height:1.2}
+.compare-col:first-child .compare-item{color:#777}
+.compare-col+.compare-col .compare-item{color:#141414}
+/* Process */
+.process{background:#fff}
+.process-track{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:36px}
+.process-item{border-top:4px solid var(--black);padding:20px 8px 10px 0;min-width:0}
+.process-item .n{font-size:12px;font-weight:900;color:#888;margin-bottom:18px}
+.process-item h3{font-size:25px;line-height:1.1;font-weight:900;letter-spacing:-.05em;margin:0 0 10px}
+.process-item p{font-size:14px;line-height:1.5;color:#666;margin:0}
+.process-note{margin-top:35px;background:#f1f1ed;padding:22px 25px;font-size:16px;line-height:1.45;color:#424242}
+/* CTA */
+.cta{background:var(--black);color:var(--white);padding:105px 0 44px}
+.cta .kicker{color:var(--yellow)}
+.cta h2{font-size:clamp(48px,7.5vw,96px);font-weight:950;line-height:.94;letter-spacing:-.082em;margin:23px 0 32px;max-width:950px}
+.cta .lead{color:#c3c3c3;max-width:600px}
+.contact{display:grid;grid-template-columns:1.3fr .7fr;gap:0;margin-top:65px;border-top:1px solid #494949;border-bottom:1px solid #494949}
+.contact a{display:block;text-decoration:none;padding:30px 20px 35px 0;min-width:0}
+.contact a+a{border-left:1px solid #494949;padding-left:26px}
+.contact .label{display:block;color:#a2a2a2;margin-bottom:12px}
+.contact strong{display:block;font-size:clamp(27px,4.3vw,50px);font-weight:950;color:var(--yellow);letter-spacing:-.066em;line-height:1.08;overflow-wrap:anywhere}
+.contact a:hover strong{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:8px}
+.bottom{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-top:36px;color:#999;font-size:12px;font-weight:750}
+.bottom strong{color:#fff;font-size:20px;letter-spacing:-.05em}
+@media(max-width:760px){
+ .wrap{width:calc(100% - 36px)}section{padding:62px 0}
+ .hero{min-height:92svh;padding-top:22px;padding-bottom:31px}
+ .top-right{font-size:9px}
+ .hero-content{padding:96px 0 72px}
+ .hero h1{font-size:clamp(49px,12.2vw,80px);letter-spacing:-.075em}
+ .pain-header{grid-template-columns:1fr;gap:0}
+ .pain-grid{grid-template-columns:1fr;gap:10px;margin-top:28px}
+ .pain-card{min-height:0;padding:22px 22px 26px}
+ .pain-card h3{margin-top:18px}
+ .bridge{padding:65px 0}
+ .method-grid{grid-template-columns:1fr;margin-top:24px}
+ .method-card,.method-card:not(:first-child){border-right:0;border-bottom:1px solid var(--line);padding:22px 0 26px}
+ .method-card:last-child{border-bottom:0}
+ .method-card .step{margin-bottom:24px}
+ .method-card .meta{margin-top:19px}
+ .service-list{grid-template-columns:1fr;gap:9px;margin-top:28px}
+ .service{min-height:140px;padding:22px}
+ .compare{grid-template-columns:1fr 1fr}
+ .compare-title{padding:15px 12px;font-size:10px}
+ .compare-item{padding:16px 12px;min-height:110px;font-size:16px}
+ .process-track{grid-template-columns:1fr 1fr;gap:22px 14px}
+ .contact{grid-template-columns:1fr;margin-top:44px}
+ .contact a{padding:24px 0 27px}
+ .contact a+a{border-left:0;border-top:1px solid #494949;padding-left:0}
+ .contact strong{font-size:clamp(29px,8.2vw,46px)}
+ .bottom{align-items:start}
+ .cta{padding:70px 0 30px}
+}
+@media(max-width:380px){.wrap{width:calc(100% - 30px)}.hero h1{font-size:47px}.top-right{letter-spacing:.04em}.compare-item{font-size:15px}.process-track{grid-template-columns:1fr}.process-item{padding-top:14px}.cta h2{font-size:47px}}
+@media print{*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}body{background:var(--paper)!important}section{break-inside:avoid}.hero{min-height:84vh}.contact a{text-decoration:none}}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+ <div class="wrap" style="display:flex;flex-direction:column;flex:1">
+  <div class="top">
+   <div class="wordmark">O SÓCIO<span>.</span></div>
+   <div class="top-right">MARKETING<br>VENDAS<br>AUTOMAÇÃO</div>
+  </div>
+  <div class="hero-content">
+   <span class="kicker">Apresentação institucional</span>
+   <h1>Vender mais não pode depender de <span class="yellow">sorte.</span></h1>
+   <p class="lead">O cliente precisa encontrar sua empresa, receber um bom atendimento e ter um motivo para comprar. Nós conectamos essas etapas para seu negócio crescer com mais direção.</p>
+  </div>
+  <div class="hero-bottom"><span><span class="yellow-dot"></span>O Sócio • Marketing, Vendas & Automação</span><span>01 / COMEÇAMOS POR AQUI</span></div>
+ </div>
+</section>
+
+<section class="pain">
+ <div class="wrap">
+  <div class="pain-header">
+   <div><div class="kicker">O cenário de muitas empresas</div><h2 class="h2">Oportunidade chega.<br>Venda não acontece.</h2></div>
+   <p class="lead">Nem sempre o problema é falta de procura. Muitas vezes, está no caminho entre o primeiro interesse e o fechamento.</p>
+  </div>
+  <div class="pain-grid">
+   <article class="pain-card"><span class="n">01 / INVESTIMENTO</span><div><h3>Anúncio rodando.<br>Retorno incerto.</h3><p>O dinheiro sai, mas falta clareza sobre o que realmente gera cliente.</p></div></article>
+   <article class="pain-card"><span class="n">02 / ATENDIMENTO</span><div><h3>O cliente chama.<br>A resposta demora.</h3><p>O interesse esfria enquanto a oportunidade espera no WhatsApp.</p></div></article>
+   <article class="pain-card"><span class="n">03 / ORGANIZAÇÃO</span><div><h3>Conversas espalhadas.<br>Leads esquecidos.</h3><p>Sem controle, fica difícil acompanhar quem pediu orçamento e quem pode fechar.</p></div></article>
+   <article class="pain-card"><span class="n">04 / CRESCIMENTO</span><div><h3>Muito esforço.<br>Pouca previsibilidade.</h3><p>Cada venda depende de improviso, e a empresa não sabe onde melhorar.</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="bridge">
+ <div class="wrap">
+  <div class="kicker">O ponto de virada</div>
+  <h2>Mais anúncios não resolvem um processo de vendas que perde oportunidades.</h2>
+  <p>É por isso que trabalhamos marketing, atendimento e vendas de forma conectada — não como peças soltas.</p>
+ </div>
+</section>
+
+<section class="method">
+ <div class="wrap">
+  <div class="method-intro"><div class="kicker">A solução O Sócio</div><h2 class="h2">Da atenção até a venda.<br>Um caminho claro.</h2><p class="lead">Cada etapa tem um papel. E todas precisam funcionar juntas.</p></div>
+  <div class="method-grid">
+   <article class="method-card"><div class="step">01</div><h3>Atrair</h3><p>Colocar sua empresa na frente das pessoas certas, no momento e no canal certos.</p><span class="meta">GOOGLE ADS · META ADS · ESTRATÉGIA</span></article>
+   <article class="method-card"><div class="step">02</div><h3>Converter</h3><p>Transformar visitas e interesse em conversas reais com páginas e campanhas objetivas.</p><span class="meta">SITES · LANDING PAGES · CRIATIVOS</span></article>
+   <article class="method-card"><div class="step">03</div><h3>Atender e vender</h3><p>Responder melhor, organizar contatos e recuperar oportunidades que poderiam se perder.</p><span class="meta">CRM · IA NO WHATSAPP · AUTOMAÇÃO</span></article>
+  </div>
+ </div>
+</section>
+
+<section class="services">
+ <div class="wrap">
+  <div class="kicker yellow">O que fazemos</div><h2 class="h2">As ferramentas certas.<br>Para problemas reais.</h2><p class="lead">Montamos a estrutura de acordo com o momento e a necessidade de cada empresa.</p>
+  <div class="service-list">
+   <div class="service"><div class="tag">01</div><div><div class="service-name">Tráfego pago</div><p class="service-desc">Google e Meta para gerar demanda, alcançar o público certo e acompanhar resultados.</p></div></div>
+   <div class="service"><div class="tag">02</div><div><div class="service-name">Sites e Landing Pages</div><p class="service-desc">Presença profissional e páginas pensadas para transformar visitas em contatos.</p></div></div>
+   <div class="service"><div class="tag">03</div><div><div class="service-name">CRM de vendas</div><p class="service-desc">Leads centralizados, etapas organizadas e acompanhamento do atendimento.</p></div></div>
+   <div class="service"><div class="tag">04</div><div><div class="service-name">IA no WhatsApp</div><p class="service-desc">Atendimento inicial, perguntas de qualificação e apoio ao time comercial.</p></div></div>
+   <div class="service"><div class="tag">05</div><div><div class="service-name">WhatsApp API Oficial</div><p class="service-desc">Campanhas autorizadas, relacionamento e recuperação de contatos por mensagens.</p></div></div>
+   <div class="service"><div class="tag">06</div><div><div class="service-name">Consultoria e estratégia</div><p class="service-desc">Decisões baseadas no negócio, nos dados das campanhas e nas oportunidades de melhoria.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="transform">
+ <div class="wrap">
+  <div class="kicker">O que muda na prática</div><h2 class="h2">Menos improviso.<br>Mais controle.</h2>
+  <div class="compare">
+   <div class="compare-col"><div class="compare-title">Sem estrutura</div><div class="compare-item">Campanha sem direção</div><div class="compare-item">Contato perdido no WhatsApp</div><div class="compare-item">Demora para responder</div><div class="compare-item">Decisões no achismo</div></div>
+   <div class="compare-col"><div class="compare-title">Com O Sócio</div><div class="compare-item">Objetivo e acompanhamento</div><div class="compare-item">Leads organizados no CRM</div><div class="compare-item">Atendimento mais ágil</div><div class="compare-item">Ajustes guiados por dados</div></div>
+  </div>
+ </div>
+</section>
+
+<section class="process">
+ <div class="wrap">
+  <div class="kicker">Nosso jeito de trabalhar</div><h2 class="h2">Sem fórmula pronta.<br>Com direção e execução.</h2>
+  <div class="process-track">
+   <div class="process-item"><div class="n">01</div><h3>Entender</h3><p>Negócio, público, oferta e onde as vendas estão travando.</p></div>
+   <div class="process-item"><div class="n">02</div><h3>Estruturar</h3><p>Definir canais, campanhas, páginas e organização dos contatos.</p></div>
+   <div class="process-item"><div class="n">03</div><h3>Executar</h3><p>Colocar a estratégia para rodar e acompanhar as oportunidades.</p></div>
+   <div class="process-item"><div class="n">04</div><h3>Melhorar</h3><p>Ajustar com base em dados, qualidade dos leads e retorno comercial.</p></div>
+  </div>
+  <div class="process-note">Não trabalhamos para entregar apenas campanhas no ar. Trabalhamos para construir uma operação de aquisição e vendas que faça sentido para a sua empresa.</div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="wrap">
+  <div class="kicker">O próximo passo</div>
+  <h2>Seu negócio pode vender mais.<br><span class="yellow">Vamos construir esse caminho.</span></h2>
+  <p class="lead">Se você quer deixar de depender só de indicação, improviso e tentativa, conheça a O Sócio.</p>
+  <div class="contact">
+   <a href="https://lp.osocio.com.br" target="_blank" rel="noopener noreferrer"><span class="label">Conheça nosso site</span><strong>lp.osocio.com.br</strong></a>
+   <a href="https://www.instagram.com/osocio/" target="_blank" rel="noopener noreferrer"><span class="label">Acompanhe nosso trabalho</span><strong>@osocio</strong></a>
+  </div>
+  <div class="bottom"><div><strong>O SÓCIO<span class="yellow">.</span></strong><div style="margin-top:7px">Marketing, Vendas & Automação</div></div><span>São Paulo • Brasil</span></div>
+ </div>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Proposta de marketing, captação e atendimento para operações de crédito com garantia, empréstimos e financiamentos.">
+  <title>Proposta Comercial | Soluções Financeiras — O Sócio</title>
+  <style>
+    :root{--ink:#101010;--gold:#d8b445;--goldsoft:#f3e9c9;--paper:#faf9f6;--white:#fff;--muted:#696969;--muted-dark:#b7b7b7;--line:#e8e6df;--line-dark:#353535;--font:Inter,Arial,Helvetica,system-ui,-apple-system,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}a{color:inherit}
+    .wrap{width:min(1060px,calc(100% - 44px));margin-inline:auto}.section{padding:79px 0}.kicker{display:block;font-size:11px;line-height:1.5;letter-spacing:.13em;font-weight:900;text-transform:uppercase}.title{font-size:clamp(35px,5.5vw,67px);line-height:1.0;letter-spacing:-.065em;font-weight:950;margin:12px 0 24px;max-width:930px}.lead{font-size:clamp(17px,2.15vw,21px);line-height:1.5;max-width:800px;margin:0}.gold{color:var(--gold)}
+    .hero{background:var(--ink);color:var(--white);min-height:88svh;display:flex;flex-direction:column;padding:26px 0 32px}.hero .wrap{display:flex;flex:1;flex-direction:column}.top{display:flex;align-items:center;justify-content:space-between;gap:16px}.logo{font-size:clamp(24px,3.4vw,37px);font-weight:1000;line-height:1;letter-spacing:-.077em;white-space:nowrap}.logo span{color:var(--gold)}.top-note{text-align:right;color:#b4b4b4;font-size:10px;font-weight:850;line-height:1.4;letter-spacing:.11em;text-transform:uppercase}.hero-main{display:flex;flex:1;flex-direction:column;justify-content:center;padding:94px 0 68px}.hero .kicker{color:var(--gold)}.hero h1{font-size:clamp(51px,8.9vw,108px);font-weight:1000;line-height:.94;letter-spacing:-.08em;margin:21px 0 27px;max-width:1030px}.hero .lead{color:#cecece;max-width:730px}.hero-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:20px;border-top:1px solid #404040;color:#c6c6c6;font-size:12px;font-weight:750}.hero-foot .bullet{display:inline-block;width:10px;height:10px;margin-right:7px;background:var(--gold);border-radius:50%}.tokens{display:flex;gap:8px;flex-wrap:wrap;margin-top:29px}.token{border:1px solid #4a4a4a;padding:9px 13px;font-size:12px;font-weight:800;border-radius:99px;color:#e5e5e5}
+    .pain{background:var(--paper)}.pain-top{display:grid;grid-template-columns:1.2fr .8fr;gap:42px;align-items:end}.pain-top .lead{color:#525252}.pain-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:32px}.pain-card{background:white;border:1px solid var(--line);padding:26px 24px;min-height:245px}.pain-card .number{font-size:12px;font-weight:950;color:#aaa}.pain-card h3{font-size:clamp(22px,2.45vw,29px);line-height:1.08;letter-spacing:-.045em;font-weight:950;margin:32px 0 13px}.pain-card p{color:#666;font-size:15px;line-height:1.45;margin:0}
+    .bridge{background:var(--gold);padding:66px 0}.bridge h2{font-size:clamp(37px,5.8vw,73px);font-weight:1000;letter-spacing:-.071em;line-height:1.01;margin:12px 0 20px;max-width:910px}.bridge p{font-size:18px;line-height:1.5;margin:0;max-width:775px}
+    .strategy{background:var(--white)}.strategy-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:12px;margin-top:32px}.strategy-main{background:#121212;color:white;padding:32px;min-height:375px;display:flex;flex-direction:column;justify-content:space-between}.strategy-main .kicker{color:var(--gold)}.strategy-main h3{font-size:clamp(31px,4vw,47px);letter-spacing:-.06em;line-height:1.04;margin:22px 0 18px}.strategy-main p{color:#c9c9c9;font-size:16px;line-height:1.48;max-width:640px;margin:0}.strategy-side{display:grid;grid-template-rows:1fr 1fr;gap:12px}.strategy-tile{border:1px solid var(--line);background:var(--paper);padding:26px;display:flex;flex-direction:column;justify-content:space-between}.strategy-tile h3{font-size:26px;letter-spacing:-.04em;line-height:1.1;margin:14px 0 10px}.strategy-tile p{font-size:15px;line-height:1.45;color:#666;margin:0}.tag{font-size:11px;letter-spacing:.12em;font-weight:900;color:#777;text-transform:uppercase}
+    .products{background:#151515;color:white}.products .lead{color:#c9c9c9}.product-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:32px}.product{border:1px solid #3d3d3d;padding:27px;min-height:190px}.product .tag{color:var(--gold)}.product h3{font-size:clamp(24px,3vw,35px);line-height:1.08;letter-spacing:-.05em;margin:25px 0 10px}.product p{color:#bfbfbf;font-size:15px;line-height:1.44;margin:0}.product-note{font-size:12px;color:#9a9a9a;margin-top:19px;line-height:1.5}
+    .method{background:var(--paper)}.method-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:34px}.method-item{padding:19px 14px 18px;border-top:4px solid #161616;background:white}.method-item .n{font-size:12px;color:#888;font-weight:900;margin-bottom:28px}.method-item h3{font-size:clamp(19px,2.2vw,25px);line-height:1.08;letter-spacing:-.045em;margin:0 0 9px}.method-item p{font-size:14px;line-height:1.44;color:#666;margin:0}.method-footer{margin-top:27px;font-size:15px;line-height:1.5;color:#555}
+    .offers{background:#fff}.offer-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:31px}.offer{border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;gap:14px}.offer .label{font-size:11px;font-weight:900;color:#666;text-transform:uppercase;letter-spacing:.12em}.offer h3{font-size:28px;line-height:1.1;letter-spacing:-.05em;margin:0}.offer .price{font-size:clamp(45px,5.5vw,62px);line-height:1;font-weight:1000;letter-spacing:-.07em;margin:5px 0}.offer .price small{font-size:15px;letter-spacing:0;color:#666;font-weight:700}.offer p{font-size:15px;color:#626262;line-height:1.45;margin:0}.offer ul{padding:0;margin:0;list-style:none;display:grid;gap:10px}.offer li{font-size:15px;color:#3e3e3e;line-height:1.35;padding-left:20px;position:relative}.offer li:before{content:"";position:absolute;left:0;top:.4em;width:8px;height:8px;border-radius:50%;background:var(--gold)}.offer-primary{border-color:#b7a06b;background:#fcfbf7}.budget{margin-top:15px;display:flex;align-items:center;gap:24px;justify-content:space-between;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0}.budget strong{font-size:clamp(25px,3.5vw,41px);letter-spacing:-.055em;white-space:nowrap}.budget div{max-width:560px;font-size:14px;line-height:1.45;color:#626262}
+    .modules{background:var(--paper)}.module-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}.module{background:#fff;border:1px solid var(--line);padding:25px;display:flex;flex-direction:column;min-height:255px}.module .label{font-size:11px;text-transform:uppercase;font-weight:900;letter-spacing:.1em;color:#808080}.module h3{font-size:clamp(22px,2.8vw,28px);line-height:1.1;letter-spacing:-.05em;margin:15px 0 11px}.module p{font-size:14px;line-height:1.48;color:#696969;flex:1;margin:0 0 16px}.module .module-price{font-size:29px;letter-spacing:-.055em;font-weight:1000;border-top:1px solid var(--line);padding-top:15px}.module .module-price small{font-size:13px;font-weight:600;color:#666;letter-spacing:0}
+    .bundle{background:#111;color:#fff}.bundle .kicker{color:var(--gold)}.bundle-inner{border:1px solid #514729;padding:40px;margin-top:28px}.bundle-top{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:end}.bundle-top h3{font-size:clamp(30px,4.6vw,56px);letter-spacing:-.06em;line-height:1.01;margin:0 0 10px}.bundle-top p{font-size:15px;line-height:1.45;color:#bcbcbc;margin:0}.old{color:#8b8b8b;font-size:clamp(18px,2.6vw,26px);text-decoration:line-through;text-decoration-thickness:1px;font-weight:700}.now{font-weight:1000;font-size:clamp(49px,7vw,84px);letter-spacing:-.075em;line-height:1.05;color:var(--gold);white-space:nowrap;margin:5px 0}.bundle-tags{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:30px}.bundle-tag{padding:17px 19px;border:1px solid #444;font-size:14px;font-weight:800;line-height:1.4}.bundle-tag span{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.11em;color:#969696;font-weight:800;margin-bottom:6px}.bonus{color:var(--gold)}.saving{border-top:1px solid #464646;margin-top:25px;padding-top:24px;font-size:clamp(20px,3vw,33px);font-weight:950;letter-spacing:-.045em}.bundle-note{font-size:12px;color:#9a9a9a;line-height:1.5;margin-top:18px}
+    .final{background:#161616;color:#fff;padding:88px 0 36px}.final .kicker{color:var(--gold)}.final h2{font-size:clamp(45px,7.5vw,96px);font-weight:1000;letter-spacing:-.075em;line-height:.96;max-width:980px;margin:23px 0 27px}.final .lead{color:#c9c9c9}.contacts{display:grid;grid-template-columns:1.3fr .7fr;border-top:1px solid #444;border-bottom:1px solid #444;margin-top:50px}.contacts a{display:block;text-decoration:none;padding:27px 24px 30px 0;min-width:0}.contacts a+a{border-left:1px solid #444;padding-left:25px}.contacts a small{display:block;color:#959595;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.11em;margin-bottom:11px}.contacts a strong{display:block;color:var(--gold);font-weight:1000;letter-spacing:-.055em;font-size:clamp(26px,4vw,48px);overflow-wrap:anywhere;line-height:1.08}.contacts a:hover strong{text-decoration:underline;text-underline-offset:6px}.footline{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-top:29px;font-size:12px;color:#8e8e8e}.footline b{color:white;font-size:19px;letter-spacing:-.05em}
+    @media(max-width:800px){.wrap{width:calc(100% - 34px)}.section{padding:60px 0}.hero{min-height:85svh;padding-top:22px}.hero-main{padding:80px 0 58px}.hero h1{font-size:clamp(50px,11.5vw,76px)}.pain-top{grid-template-columns:1fr;gap:4px}.pain-grid{grid-template-columns:1fr;gap:10px}.pain-card{min-height:auto}.pain-card h3{margin-top:16px}.strategy-grid{grid-template-columns:1fr}.strategy-main{min-height:0;padding:26px}.strategy-side{grid-template-columns:1fr 1fr;grid-template-rows:auto}.product-grid{grid-template-columns:1fr}.method-grid{grid-template-columns:1fr 1fr}.offer-row{grid-template-columns:1fr}.module-grid{grid-template-columns:1fr}.module{min-height:0}.bundle-inner{padding:26px}.bundle-top{grid-template-columns:1fr}.bundle-tags{grid-template-columns:1fr 1fr}.budget{align-items:start}}
+    @media(max-width:540px){.wrap{width:calc(100% - 30px)}.section{padding:51px 0}.hero h1{font-size:clamp(47px,12vw,64px)}.hero-main{padding:68px 0 55px}.top-note{font-size:9px;letter-spacing:.04em}.hero-foot{font-size:10px}.strategy-side{grid-template-columns:1fr}.method-grid{grid-template-columns:1fr}.method-item{padding:18px}.offer{padding:23px}.budget{display:block}.budget strong{display:block;margin-bottom:7px}.bundle-inner{padding:21px}.bundle-tags{grid-template-columns:1fr}.now{font-size:clamp(48px,12vw,66px)}.final{padding:64px 0 28px}.contacts{grid-template-columns:1fr}.contacts a+a{border-left:0;border-top:1px solid #444;padding-left:0}.contacts a{padding:24px 0}.footline{align-items:start}}
+    @media print{*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}@page{margin:0}section{break-inside:avoid}.hero{min-height:75vh}}
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="top"><div class="logo">O SÓCIO<span>.</span></div><div class="top-note">MARKETING<br>VENDAS<br>AUTOMAÇÃO</div></div>
+      <div class="hero-main">
+        <span class="kicker">Proposta comercial • Soluções financeiras</span>
+        <h1>O cliente já procura crédito. <span class="gold">Ele encontra sua empresa?</span></h1>
+        <p class="lead">Uma estratégia para captar pessoas com interesse em empréstimos com garantia, crédito e financiamentos — e transformar procura em oportunidades reais para o comercial.</p>
+        <div class="tokens"><span class="token">Google Ads</span><span class="token">Meta Ads</span><span class="token">CRM</span><span class="token">WhatsApp Oficial</span><span class="token">IA SDR</span></div>
+      </div>
+      <div class="hero-foot"><span><span class="bullet"></span>Google como prioridade. Atendimento como diferencial.</span><span>O SÓCIO</span></div>
+    </div>
+  </section>
+
+  <section class="section pain">
+    <div class="wrap">
+      <div class="pain-top"><div><span class="kicker">O problema</span><h2 class="title">Mais contatos não significam mais contratos.</h2></div><p class="lead">No mercado financeiro, a diferença está em atrair a pessoa certa, explicar a solução com clareza e não perder o momento do atendimento.</p></div>
+      <div class="pain-grid">
+        <article class="pain-card"><div class="number">01 / CAPTAÇÃO</div><div><h3>Muito clique.<br>Pouco perfil.</h3><p>Leads sem o tipo de garantia ou necessidade que a operação atende.</p></div></article>
+        <article class="pain-card"><div class="number">02 / CONFIANÇA</div><div><h3>O cliente pesquisa.<br>Mas não avança.</h3><p>Crédito exige explicação, credibilidade e uma jornada simples até o contato.</p></div></article>
+        <article class="pain-card"><div class="number">03 / COMERCIAL</div><div><h3>Oportunidades chegam.<br>E esfriam.</h3><p>Demora, falta de qualificação e conversas sem acompanhamento custam negócios.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bridge">
+    <div class="wrap"><span class="kicker">Nossa proposta</span><h2>Não é anunciar empréstimo para todo mundo. É aparecer para quem busca a solução certa.</h2><p>Vamos unir captação por intenção de busca, campanhas de apoio e uma estrutura organizada de atendimento para melhorar a qualidade das oportunidades.</p></div>
+  </section>
+
+  <section class="section strategy">
+    <div class="wrap">
+      <span class="kicker">Estratégia principal</span>
+      <h2 class="title">Google Ads no centro. O resto trabalha a favor da conversão.</h2>
+      <p class="lead">Nossa prioridade é a Rede de Pesquisa: estar presente quando a pessoa procura financiamento, crédito com garantia ou empréstimo e quer entender as opções.</p>
+      <div class="strategy-grid">
+        <article class="strategy-main"><div><span class="kicker">01 / Rede de Pesquisa</span><h3>Seu anúncio aparece na hora em que o interesse existe.</h3></div><p>Campanhas organizadas por tipo de produto, intenção de busca e região. Anúncios com linguagem objetiva e páginas alinhadas à oferta.</p></article>
+        <div class="strategy-side">
+          <article class="strategy-tile"><div class="tag">02 / YouTube</div><div><h3>Presença que gera confiança.</h3><p>Comunicação educativa e reforço de marca para quem ainda está comparando possibilidades.</p></div></article>
+          <article class="strategy-tile"><div class="tag">03 / Remarketing</div><div><h3>Não desaparecer depois da primeira visita.</h3><p>Retomar contato publicitário com interessados, quando permitido pelas políticas e pelo consentimento aplicável.</p></div></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section products">
+    <div class="wrap"><span class="kicker gold">O que vamos trabalhar</span><h2 class="title">Uma estratégia própria para cada linha de crédito.</h2><p class="lead">Quem busca crédito com imóvel em garantia tem uma necessidade diferente de quem procura financiamento ou crédito com veículo. A comunicação precisa respeitar isso.</p>
+      <div class="product-grid">
+        <article class="product"><div class="tag">01 / GARANTIA DE IMÓVEL</div><h3>Home Equity</h3><p>Captar quem procura empréstimo com garantia de imóvel e deseja avaliar suas condições.</p></article>
+        <article class="product"><div class="tag">02 / GARANTIA DE VEÍCULO</div><h3>Car Equity</h3><p>Alcançar interessados em crédito com garantia de veículo e direcioná-los para uma avaliação.</p></article>
+        <article class="product"><div class="tag">03 / EMPRÉSTIMOS</div><h3>Crédito em geral</h3><p>Organizar campanhas por modalidade disponível, necessidade do cliente e perfil aceito pela operação.</p></article>
+        <article class="product"><div class="tag">04 / FINANCIAMENTOS</div><h3>Financiamentos</h3><p>Captar buscas de quem está comparando opções para financiar bens ou projetos, conforme os produtos oferecidos.</p></article>
+      </div>
+      <p class="product-note">A análise, taxas, prazos, garantias e aprovação do crédito dependem da instituição responsável e das condições aplicáveis. Não prometemos aprovação ou condições não confirmadas.</p>
+    </div>
+  </section>
+
+  <section class="section method">
+    <div class="wrap"><span class="kicker">Do anúncio ao comercial</span><h2 class="title">Um funil que não termina no clique.</h2><p class="lead">Atrair é apenas o começo. O objetivo é entregar oportunidades mais organizadas para a equipe negociar.</p>
+      <div class="method-grid">
+        <article class="method-item"><div class="n">01</div><h3>Pesquisa</h3><p>O cliente procura a modalidade de crédito.</p></article>
+        <article class="method-item"><div class="n">02</div><h3>Landing Page</h3><p>Encontra uma explicação clara e um caminho para contato.</p></article>
+        <article class="method-item"><div class="n">03</div><h3>WhatsApp</h3><p>Inicia a conversa com a operação.</p></article>
+        <article class="method-item"><div class="n">04</div><h3>IA + CRM</h3><p>Triagem inicial e registro do atendimento.</p></article>
+        <article class="method-item"><div class="n">05</div><h3>Consultor</h3><p>Conduz a análise e a proposta.</p></article>
+      </div>
+      <p class="method-footer">A qualificação inicial identifica interesse, modalidade e informações necessárias, com cuidado no tratamento de dados pessoais. A decisão de crédito permanece com o responsável pela operação.</p>
+    </div>
+  </section>
+
+  <section class="section offers">
+    <div class="wrap">
+      <span class="kicker">Serviços e investimento</span><h2 class="title">Começamos pela demanda que já existe.</h2>
+      <div class="offer-row">
+        <article class="offer offer-primary"><div class="label">Serviço principal</div><h3>Google Ads + CRM</h3><div class="price">R$ 997<small>/mês</small></div><p>Gestão de Google Ads para crédito e financiamentos, com o CRM incluído para acompanhar cada oportunidade.</p><ul><li>Rede de Pesquisa como prioridade</li><li>Estrutura por modalidade de crédito</li><li>YouTube e remarketing como apoio estratégico</li><li>Otimização de termos, anúncios e resultados</li><li>Acesso ao CRM</li></ul></article>
+        <article class="offer"><div class="label">Canal complementar</div><h3>Meta Ads</h3><div class="price">R$ 697<small>/mês</small></div><p>Facebook e Instagram para ampliar a presença digital e captar interessados em soluções financeiras.</p><ul><li>Campanhas para aquisição de leads</li><li>Criativos por produto financeiro</li><li>Testes de mensagens e formatos</li><li>Acompanhamento da qualidade dos contatos</li><li>Segmentação conforme regras da plataforma</li></ul></article>
+      </div>
+      <div class="budget"><strong>R$ 50/dia</strong><div><b>Investimento inicial sugerido em anúncios.</b> A verba de mídia é separada da gestão e distribuída entre canais conforme a estratégia, podendo ser ampliada ou ajustada.</div></div>
+    </div>
+  </section>
+
+  <section class="section modules">
+    <div class="wrap"><span class="kicker">Estrutura complementar</span><h2 class="title">Menos trabalho manual. Mais acompanhamento.</h2>
+      <div class="module-grid">
+        <article class="module"><div class="label">Landing Page básica</div><h3>Uma página feita para gerar contato.</h3><p>Apresentação clara da solução financeira, diferenciais e botão para WhatsApp ou formulário.</p><div class="module-price">R$ 197 <small>/ano</small></div></article>
+        <article class="module"><div class="label">Módulo avulso</div><h3>Disparo em massa oficial</h3><p>Reativação e comunicação com contatos que autorizaram o recebimento, usando a API Oficial do WhatsApp.</p><div class="module-price">R$ 197 <small>/mês</small></div></article>
+        <article class="module"><div class="label">Módulo avulso</div><h3>Agente de IA SDR</h3><p>Atendimento inicial para tirar dúvidas gerais, identificar a modalidade desejada e encaminhar para o consultor.</p><div class="module-price">R$ 197 <small>/mês</small></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bundle">
+    <div class="wrap">
+      <span class="kicker">Condição especial • Pacote integrado</span>
+      <h2 class="title">Contratou Google + Meta? A automação entra como bônus.</h2>
+      <p class="lead" style="color:#c7c7c7">A proposta é cuidar da captação e também do atendimento inicial, sem deixar os canais trabalhando separados.</p>
+      <div class="bundle-inner">
+        <div class="bundle-top">
+          <div><h3>Google + Meta + CRM + IA SDR + Disparo Oficial</h3><p>Gestão das duas plataformas com as ferramentas de atendimento e recuperação de oportunidades.</p></div>
+          <div><div class="old">De R$ 2.088/mês</div><div class="now">R$ 1.497</div><div style="font-size:14px;color:#c7c7c7">por mês • gestão e módulos incluídos</div></div>
+        </div>
+        <div class="bundle-tags">
+          <div class="bundle-tag"><span>Incluído</span>Google Ads + CRM</div>
+          <div class="bundle-tag"><span>Incluído</span>Meta Ads</div>
+          <div class="bundle-tag bonus"><span>Bônus • R$ 197/mês</span>Agente IA SDR para crédito</div>
+          <div class="bundle-tag bonus"><span>Bônus • R$ 197/mês</span>Disparo em massa via API Oficial</div>
+        </div>
+        <div class="saving">Economia de <span class="gold">R$ 591 por mês</span> em relação à contratação avulsa.</div>
+        <div class="bundle-note">Verba de mídia e Landing Page não incluídas na mensalidade. Eventuais tarifas por mensagens da plataforma WhatsApp são cobradas à parte. Módulos bônus permanecem sem mensalidade adicional enquanto o pacote contratado estiver ativo.</div>
+      </div>
+      <p class="bundle-note">A publicação de anúncios financeiros no Brasil está sujeita à verificação e às políticas de cada plataforma, além da comprovação de vínculo ou autorização pertinente. O início da veiculação depende da aprovação e dos acessos necessários.</p>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap"><span class="kicker">O Sócio • Marketing, Vendas & Automação</span><h2>O cliente procura. <span class="gold">Nós construímos o caminho até a conversa.</span></h2><p class="lead">Campanhas com foco em intenção, atendimento organizado e decisões baseadas em dados. Uma operação pensada para transformar interesse em oportunidades reais.</p>
+      <div class="contacts"><a href="https://lp.osocio.com.br" target="_blank" rel="noopener"><small>Conheça nosso trabalho</small><strong>lp.osocio.com.br</strong></a><a href="https://instagram.com/osocio" target="_blank" rel="noopener"><small>Acompanhe no Instagram</small><strong>@osocio</strong></a></div>
+      <div class="footline"><b>O SÓCIO<span class="gold">.</span></b><span>Marketing, Vendas & Automação</span></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
